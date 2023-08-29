@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Will You Marry Me?</title>
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Will You Marry Me?</h1>
+        <p>My Dearest ,Honey,</p>
+        <p>From the very first moment we met, my life changed in ways I could never have imagined. You bring a special kind of magic into my life, and every day with you feels like a beautiful dream.</p>
+        <p>Your smile brightens even the darkest of days, and your laughter is like music to my ears. You are my confidant, my partner in adventure, and my greatest supporter. Your love has filled my life with happiness beyond measure.</p>
+        <p>Today, I stand before you with all the love in my heart, and I want to ask you the most important question of my life:</p>
+        <p>Will you marry me, [Your Girlfriend's Name]? Will you be my partner in this journey of a lifetime, my love, my best friend, and the one I wake up to every morning for the rest of our lives?</p>
+        <p>Please make me the happiest person in the world and say 'Yes'.</p>
+        <button id="yesButton">Yes, I Will!</button>
+        <button id="noButton">Sorry, Not Now</button>
+        <div id="responseMessage"></div>
+    </div>
+
+    <script>
+        const yesButton = document.getElementById('yesButton');
+        const noButton = document.getElementById('noButton');
+        const responseMessage = document.getElementById('responseMessage');
+
+        yesButton.addEventListener('click', function () {
+            responseMessage.innerHTML = `Congratulations! You've made me the happiest person in the world. I love you more than words can express, Honey! 💍❤️`;
+        });
+
+        noButton.addEventListener('click', function () {
+            responseMessage.innerHTML = `That's okay. I understand. My love for you will always be here, Honey. I cherish every moment with you. ❤️`;
+        });
+    </script>
+</body>
+</html>
